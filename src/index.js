@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    const task = e.target['new-task-description'].value;
+    const task = document.getElementById('new-task-description').value;
     buildToDo(task);
   });
 });
